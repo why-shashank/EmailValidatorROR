@@ -1,0 +1,41 @@
+<center>
+<div style="width: 80%; display: table;border-radius: 4px;background: darkcyan; ">
+<br><B style="color: whitesmoke;">
+<% if admlogged_in? %>
+    Currently Logged in: 
+	<%=current_admin.username %>
+<% end %></B>
+
+<div style="display: table-row; height: 250px;">
+<% if admlogged_in? %>
+<div style="width: 40%; display: table-cell; background: darkcyan;"><br>
+<div style="width: 80%">
+	<%= form_for :anything, url: "adapp" do |f| %>
+	<B style="color: whitesmoke;">
+	  <%= label_tag(:q, "Email:") %> </B>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Validate") %>
+    <% end  %>
+</div>
+</div>
+<div style="width:  40%;display: table-cell; background: darkcyan;"><br> 
+	<div style="width:80%">
+		<br><br><br>
+	<%= form_with url: "/import", multipart: true do |form| %>
+	<B style="color: whitesmoke;">
+  	<%= form.file_field :file %></B>
+      <%= submit_tag("Validate using File") %>
+    <% end  %>
+    </div>
+   </div>
+
+   <button  onclick="window.location.href='/logout'">Logout</button>
+	
+<% else %>
+    You are not logged in.<br>Please Log in to use the application.
+	
+<% end %>
+
+</div>
+</div>
+</center>

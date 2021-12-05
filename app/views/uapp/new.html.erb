@@ -1,0 +1,29 @@
+<center>
+<div style="width: 80%; display: table;border-radius: 4px;background: darkcyan; ">
+<br><B style="color: whitesmoke;">
+<% if admlogged_in? %>
+    Currently Logged in: 
+	<%=current_user.username %>
+<% end %></B>
+<div style="display: table-row; height: 250px;">
+
+<div style="width: 80%"><br>
+<% if logged_in? %>
+	  <%= form_for :anything, url: "uapp" do |f| %>
+	  <B style="color: whitesmoke;">
+	  <%= label_tag(:q, "Email:") %></B>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Validate") %>
+    <% end  %>
+    <br>
+	<button style="width:80px" onclick="window.location.href='/logout'">Logout</button>
+	
+<% elsif !logged_in? %>
+    You are not logged in.<br>Please Log in to use the application.
+	
+<% end %>
+
+</div>
+</div>
+</div>
+</center>

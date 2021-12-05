@@ -1,0 +1,24 @@
+
+<center>
+<div style="width: 80%; display: table;border-radius: 4px;background: darkcyan; height: 250px;">
+<div style="width: 80%;">
+<br>
+<%= form_with(scope: :session, url: login_path) do |f| %>
+ 
+  <b style="color: whitesmoke;">
+  <%= f.label :username %></b>
+  <%= f.text_field :username %>
+
+  <b style="color: whitesmoke;">
+  <%= f.label :password %></b>
+  <%= f.password_field :password%>
+
+  <%= f.submit "User Log in"%>
+ 
+  <!--  <%= f.label :email %><br/>
+  <%= f.email_field :email, class: "form-control" %>-->
+
+<% end %>
+</div>
+</div>
+</center>

@@ -1,0 +1,24 @@
+<center>
+<div style="width: 80%; display: table;border-radius: 4px;background: darkcyan; height: 250px;">
+<div style="width: 80%;">
+<br>
+
+<%= form_with(model: @admin, local: true) do |f| %>
+  <b style="color: whitesmoke;">
+  <%= f.label :username %></b>
+  <%= f.text_field :username %>
+  <b style="color: whitesmoke;">
+  <%= f.label :password %></b>
+  <%= f.password_field :password %>
+
+  <%= f.submit %>
+
+<!--<div class="form-group">
+  <%= f.label :email %><br/>
+  <%= f.email_field :email%>
+</div> -->
+ 
+<% end %>
+</div>
+</div>
+</center>
