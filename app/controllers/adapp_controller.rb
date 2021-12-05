@@ -4,10 +4,10 @@ class AdappController < ApplicationController
 	def validate
         if Truemail.valid?(params[:q])  #have set default validation to mx in configuration
         	redirect_to adapp_path
-        	flash[:notice] = params[:q] + " is Validated"
+        	flash[:notice] = params[:q] + " is Valid"
         else
         	redirect_to adapp_path
-        	flash[:alert] = params[:q] + " is Not Validated"
+        	flash[:alert] = params[:q] + " is Not Valid!!"
         end
 		
 	end

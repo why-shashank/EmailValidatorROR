@@ -11,7 +11,7 @@ end
  
 def require_user
   if !logged_in?
-    flash[:alert] = "You must be logged in to perform that action."
+    flash[:alert] = "You must be logged in to perform that action!!"
     redirect_to login_path
   end
 end
@@ -25,7 +25,7 @@ def admlogged_in?
 end
 def require_admin
   if !admlogged_in
-    flash[:alert] = "You must be logged in to perform that action."
+    flash[:alert] = "You must be logged in to perform that action!!"
     redirect_to admin_login_path
   end
 end

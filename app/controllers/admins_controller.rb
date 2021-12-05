@@ -8,7 +8,7 @@ class AdminsController < ApplicationController
    @admin = Admin.new(user_params)
    if !Admin.where(username: user_params[ :username]).exists?  # to check is the new username is uniqu
    if @admin.save
-     flash[:notice] = "Admin created succesfully. Please login to use the application"
+     flash[:notice] = "Admin created succesfully. Please login to use the application."
      redirect_to root_path
    else
      

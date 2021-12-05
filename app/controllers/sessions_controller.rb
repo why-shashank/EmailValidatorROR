@@ -6,7 +6,7 @@ def create
     flash[:notice] = "Logged in successfully."
     redirect_to uapp_path
   else
-    flash.now[:alert] = "Something wrong with your login details."
+    flash.now[:alert] = "Something wrong with your login details!!"
     render 'new'
   end
 end

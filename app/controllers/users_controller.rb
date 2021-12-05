@@ -17,7 +17,7 @@ class UsersController < ApplicationController
      
     else
       redirect_to signup_path
-      flash[:notice] = "User Account not created due to some issues!!."
+      flash[:notice] = "User Account not created due to some issues!!"
     end
      
    else
