@@ -37,6 +37,10 @@ But Admin has one more feature of bulk Validation along with this feature of sin
 •	For bulk Validation, click on Choose File button and select a CSV file containing multiple Email IDs separated by comma only and click on Validate using File. You will get list of valid and invalid IDs at the bottom of the block as shown. For example, I used a file having 4 email IDs , two of them are valid and two are invalid as shown in the below screenshot.
 ![‘screenshot of admin bulk validation’](readmeimages/bulkval.PNG)
 
+<b>Note : </b> Also I have uploaded this sample csv file in <b>readmeimages</b> folder in the repository to give clear picture of file format. Name of the file is <b>test.csv</b> .
+Also, for the admin access, you can create new admin as option exists there currently or you can use 
+one already created by me : [ username = 'admin' and password = 'admin'] if you are using the heroku deployed app using the given link. If you are going to use it in your local machine (steps described in the next part), then there won't be any existing records. You will need to create new credentials only.
+
 
 <b>Part two : </b>
 <b>How to use this tool on your local machine.</b>
