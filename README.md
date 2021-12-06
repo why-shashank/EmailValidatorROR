@@ -5,10 +5,10 @@
 <b>Note</b> : I am using Truemail gem for the main functionality of email Id validation. I have set Validation type to smtp, for most accuracy ,in Truemail configuration, that means first it will do Regex Validation (Validating it against) then mx validation (searching for email server for the domain in the given email Id) and then finally smtp validation (checks the real existence of email account on a current email server).
 
 <b>I have deployed it on Heroku . You can use it on the below link.</b><br>
-https://emailvalidatorror.herokuapp.com/
-<br>
+<big>https://emailvalidatorror.herokuapp.com/</big>
+<br><br><br>
 <b>Part 1 of this Readme file has Steps to use the Tool on this link directly or after installation to the local machine.<br>
-Part 2(bottom part) has the information about the installation to the local machine.
+Part 2(bottom part) has the information about the installation to the local machine.<br>
 Note :</b> I have given Create New Admin option also for now, may take it out later.
 
 <b><center>Part 1</center></b>
@@ -36,6 +36,40 @@ But Admin has one more feature of bulk Validation along with this feature of sin
 ![‘screenshot of admin tool’](readmeimages/admintool.PNG)
 •	For bulk Validation, click on Choose File button and select a CSV file containing multiple Email IDs separated by comma only and click on Validate using File. You will get list of valid and invalid IDs at the bottom of the block as shown. For example, I used a file having 4 email IDs , two of them are valid and two are invalid as shown in the below screenshot.
 ![‘screenshot of admin bulk validation’](readmeimages/bulkval.PNG)
+
+
+<b><center>Part</center> </b>
+<b>How to use this tool on your local machine.</b>
+Note : I am using windows and Git bash terminal for the installation and starting the server. 
+•	First You need to clone this repository in your system
+
+     $ git clone  https://github.com/why-shashank/EmailValidatorROR.git
+
+•	Then go to the app directory
+
+     $ cd EmailValidatorROR
+
+•	Then install the needed gems except the gem in production (as I have put PostgreSQL gem for production because I wanted to deploy it on heroku while I used SQLite for development)
+
+      $ bundle install –without production
+
+•	Install Javascript dependencies
+
+      $ yarn install
+
+•	Migrate the database
+
+      $ rails db:migrate
+
+•	Start the server 
+
+      $ rails s
+
+•	Open browser and type ‘localhost:3000’, You will see the index page if everything goes fine and You can start using the application as described in part 1 of this document.
+        
+
+Note: I am very new to Ruby on rails, like I have started this project without knowing ruby or rails, I have gone through many available resources while learning it and developed this in a short time, so there can be mistakes or things which could be done in a better way. Any constructive comment or remark will be very helpful. Thank you.
+
 
 
 
