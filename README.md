@@ -14,7 +14,7 @@ Note :</b> I have given Create New Admin option also for now, may take it out la
 <b><center>Part 1</center></b>
 Steps to use the tool:
 •	This is the index page which you will see on the given link.
-![‘screenshot of index page’](readmeimages/index.png)
+![‘screenshot of index page’](readmeimages/index.PNG)
 •	Click on Create New User button if you want to use it as a user. Below Screen will appear.
               ![‘screenshot of user sign up page’](readmeimages/createnewuser.png)
 •	Provide a username and a password and click on create user to create your account. You have to choose a unique username. If you use a username which is already taken, you will see the below screen which say “Username already exists. Please chose a different one”.
