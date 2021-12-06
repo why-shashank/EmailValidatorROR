@@ -11,8 +11,8 @@
 Part 2(bottom part) has the information about the installation to the local machine.<br>
 Note :</b> I have given Create New Admin option also for now, may take it out later.
 
-<b><center>Part 1</center></b>
-Steps to use the tool:
+<b>Part One : 
+Steps to use the tool:</b><br>
 •	This is the index page which you will see on the given link.
 ![‘screenshot of index page’](readmeimages/index.PNG)
 •	Click on Create New User button if you want to use it as a user. Below Screen will appear.
@@ -38,9 +38,9 @@ But Admin has one more feature of bulk Validation along with this feature of sin
 ![‘screenshot of admin bulk validation’](readmeimages/bulkval.PNG)
 
 
-<b><center>Part</center> </b>
+<b>Part two : </b>
 <b>How to use this tool on your local machine.</b>
-Note : I am using windows and Git bash terminal for the installation and starting the server. 
+Note : I am using windows and Git bash terminal for the installation and starting the server. <br>
 •	First You need to clone this repository in your system
 
      $ git clone  https://github.com/why-shashank/EmailValidatorROR.git
@@ -65,7 +65,7 @@ Note : I am using windows and Git bash terminal for the installation and startin
 
       $ rails s
 
-•	Open browser and type ‘localhost:3000’, You will see the index page if everything goes fine and You can start using the application as described in part 1 of this document.
+•	Open browser and type ‘localhost:3000’ in URL and press enter, You will see the index page if everything goes fine and You can start using the application as described in part 1 of this document.
         
 
 Note: I am very new to Ruby on rails, like I have started this project without knowing ruby or rails, I have gone through many available resources while learning it and developed this in a short time, so there can be mistakes or things which could be done in a better way. Any constructive comment or remark will be very helpful. Thank you.
