@@ -35,15 +35,15 @@ Truemail.configure do |config|
   # This configuration will be used over current or default validation type parameter
   # All of validations for 'somedomain.com' will be processed with regex validation only.
   # And all of validations for 'otherdomain.com' will be processed with mx validation only.
-  config.validation_type_for = { 'somedomain.com' => :regex, 'otherdomain.com' => :mx }
+  #config.validation_type_for = { 'somedomain.com' => :regex, 'otherdomain.com' => :mx }
 
   # Optional parameter. Validation of email which contains whitelisted domain always will
   # return true. Other validations will not processed even if it was defined in validation_type_for
-  config.whitelisted_domains = ['somedomain1.com', 'somedomain2.com']
+  #config.whitelisted_domains = ['somedomain1.com', 'somedomain2.com']
 
   # Optional parameter. Validation of email which contains whitelisted domain always will
   # return false. Other validations will not processed even if it was defined in validation_type_for
-  config.blacklisted_domains = ['somedomain1.com', 'somedomain2.com']
+  #config.blacklisted_domains = ['somedomain1.com', 'somedomain2.com']
 
   # Optional parameter. This option will be parse bodies of SMTP errors. It will be helpful
   # if SMTP server does not return an exact answer that the email does not exist
