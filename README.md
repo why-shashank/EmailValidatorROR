@@ -4,10 +4,10 @@
 
 <b>Note</b> : I am using Truemail gem for the main functionality of email Id validation. I have set Validation type to smtp, for most accuracy ,in Truemail configuration, that means first it will do Regex Validation (Validating it against) then mx validation (searching for email server for the domain in the given email Id) and then finally smtp validation (checks the real existence of email account on a current email server).
 
-<b>I have deployed it on Heroku . You can use it on the below link.</b><br>
-<big>https://emailvalidatorror.herokuapp.com/</big>
-<br><br><br>
-<b>Part 1 of this Readme file has Steps to use the Tool on this link directly or after installation to the local machine.<br>
+
+<br>
+<br><br>
+<b>Part 1 of this Readme file has Steps to use the Tool.<br>
 Part 2(bottom part) has the information about the installation to the local machine.<br>
 Note :</b> I have given Create New Admin option also for now, may take it out later.
 
@@ -38,9 +38,6 @@ But Admin has one more feature of bulk Validation along with this feature of sin
 ![‘screenshot of admin bulk validation’](readmeimages/bulkval.PNG)
 
 <b>Note : </b> Also I have uploaded this sample csv file in <b>readmeimages</b> folder in the repository to give clear picture of file format. Name of the file is <b>test.csv</b> .
-Also, for the admin access, you can create new admin as option exists there currently or you can use 
-one already created by me : [ username = 'admin' and password = 'admin'] if you are using the heroku deployed app using the given link. If you are going to use it in your local machine (steps described in the next part), then there won't be any existing records. You will need to create new credentials only.
-
 
 <b>Part two : </b>
 <b>How to use this tool on your local machine.</b>
